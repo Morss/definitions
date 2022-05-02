@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Definitions{% endblock %}
+
+{% block content %}
+<h1>Definitions</h1>
+
+<table style="width:100%;border: 1px solid black;">
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;"> {{ renderedDefinition.recordId }} </td>
+    <td style="border: 1px solid black;"> {{ renderedDefinition.title }} </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;"> {{ "Tags" }} </td>
+    <td style="border: 1px solid black;"> {{ renderedDefinition.tags }} </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;"> {{ "People" }} </td>
+    <td style="border: 1px solid black;"> {{ renderedDefinition.people }} </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;"> {{ "Date" }} </td>
+    <td style="border: 1px solid black;"> {{ renderedDefinition.date }} </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;"> {{ "Comment" }} </td>
+    <td style="border: 1px solid black;"> {{ renderedDefinition.comment }} </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;"> {{ "Links" }} </td>
+    <td style="border: 1px solid black;"> {{ renderedDefinition.links }} </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;"> {{ "Area" }} </td>
+    <td style="border: 1px solid black;"> {{ renderedDefinition.area }} </td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black;"> {{ "Superceded By" }} </td>
+    <td style="border: 1px solid black;"> {{ renderedDefinition.superceded_by }} </td>
+  </tr>
+</table>
+
+{% endblock %}
