@@ -23,3 +23,6 @@ def home():
 @app.route("/definitions")
 def definitions():
     return render_template("definitions.html", renderedDefinition=definition01)
+
+if __name__ == "__main__":
+    serve(app, host="0.0.0.0", port=8080)
